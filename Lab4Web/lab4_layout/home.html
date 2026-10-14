@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Sederhana | Lab4Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Layout Sederhana</h1>
+      <p class="tagline">Praktikum 4 - CSS Layout dan HTML Semantik</p>
+    </header>
+    <nav aria-label="Navigasi utama">
+      <a class="active" href="home.html" aria-current="page">Home</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="about.html">About</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+    <section id="hero">
+      <h2>Hello World!</h2>
+      <p>Selamat datang di demonstrasi layout web sederhana. Halaman ini menerapkan elemen semantik HTML5, box element, float, sidebar, dan footer menggunakan CSS.</p>
+      <a href="about.html" class="btn">Tentang Kami &raquo;</a>
+    </section>
+    <section id="wrapper">
+      <main id="main">
+        <h2 class="section-heading">Konten Utama</h2>
+        <div class="row">
+          <div class="box"><div class="box-inner">
+            <img src="assets/feature-orange.svg" alt="Ilustrasi lingkaran oranye" class="image-circle">
+            <h3>Struktur HTML</h3>
+            <p>Gunakan header, nav, main, section, article, aside, dan footer agar struktur halaman lebih bermakna.</p>
+            <a href="artikel.html" class="btn btn-secondary">Lihat artikel</a>
+          </div></div>
+          <div class="box"><div class="box-inner">
+            <img src="assets/feature-blue.svg" alt="Ilustrasi lingkaran biru" class="image-circle">
+            <h3>CSS Layout</h3>
+            <p>Properti float, clear, margin, padding, dan width membantu menempatkan komponen halaman.</p>
+            <a href="artikel.html#css-layout" class="btn btn-secondary">Pelajari</a>
+          </div></div>
+          <div class="box"><div class="box-inner">
+            <img src="assets/feature-teal.svg" alt="Ilustrasi lingkaran hijau kebiruan" class="image-circle">
+            <h3>Desain Responsif</h3>
+            <p>Media query menjaga konten tetap terbaca pada layar desktop, tablet, maupun ponsel.</p>
+            <a href="about.html#portfolio" class="btn btn-secondary">Portofolio</a>
+          </div></div>
+        </div>
+        <hr class="divider">
+        <article class="entry">
+          <h2>Memahami Box Element</h2>
+          <img src="assets/article-box.svg" alt="Ilustrasi box element">
+          <p>Setiap elemen HTML dapat dipandang sebagai kotak yang tersusun dari content, padding, border, dan margin. Pemahaman model kotak membantu mengatur jarak dan ukuran elemen secara konsisten.</p>
+          <p><a href="artikel.html#box-element">Baca selengkapnya pada halaman Artikel &raquo;</a></p>
+        </article>
+        <hr class="divider">
+        <article class="entry">
+          <h2>Float dan Clear</h2>
+          <img src="assets/article-float.svg" class="right-img" alt="Ilustrasi elemen float">
+          <p>Properti <code>float</code> menempatkan elemen ke sisi kiri atau kanan. Properti <code>clear</code> mengatur agar elemen berikutnya tidak berada di samping elemen yang mengambang.</p>
+          <p><a href="../lab4_box.html">Coba demonstrasi Box Element &raquo;</a></p>
+        </article>
+      </main>
+      <aside id="sidebar">
+        <div class="widget-box">
+          <h3 class="title">Widget Header</h3>
+          <ul>
+            <li><a href="home.html">Halaman Home</a></li>
+            <li><a href="artikel.html">Artikel Praktikum</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Form Kontak</a></li>
+            <li><a href="../lab4_box.html">Box Element</a></li>
+          </ul>
+        </div>
+        <div class="widget-box">
+          <h3 class="title">Tentang Praktikum</h3>
+          <p>Modul ini membahas layout web, konsep box element, CSS float dan clear, serta elemen semantik HTML5.</p>
+        </div>
+      </aside>
+    </section>
+    <footer><p>&copy; 2026 - Lab4Web | Praktikum Pemrograman Web</p></footer>
+  </div>
+</body>
+</html>

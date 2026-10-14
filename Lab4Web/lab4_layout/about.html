@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Lab4Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <header><h1>About</h1><p class="tagline">Deskripsi, kemampuan, dan portofolio</p></header>
+    <nav aria-label="Navigasi utama">
+      <a href="home.html">Home</a><a href="artikel.html">Artikel</a><a class="active" href="about.html" aria-current="page">About</a><a href="kontak.html">Kontak</a>
+    </nav>
+    <section id="hero"><h2>Tentang Proyek Ini</h2><p>Lab4Web adalah proyek latihan untuk menerapkan dasar layout halaman web menggunakan HTML5 semantik dan CSS.</p><a href="#portfolio" class="btn">Lihat Portofolio &raquo;</a></section>
+    <section id="wrapper">
+      <main id="main" class="page-content">
+        <section class="page-intro">
+          <h2 class="section-heading">Deskripsi</h2>
+          <p>Halaman About ini dibuat sebagai jawaban tugas praktikum untuk menampilkan satu layout berisi deskripsi, daftar kemampuan, dan portofolio sederhana. Struktur dibuat dengan elemen semantik agar mudah dibaca dan dikembangkan.</p>
+          <div class="info-panel"><strong>Tujuan proyek:</strong> mempraktikkan layout, box element, float dan clear, navigasi, widget sidebar, footer, serta desain responsif menggunakan media query.</div>
+        </section>
+        <section aria-labelledby="skill-title">
+          <h2 id="skill-title" class="section-heading">Kemampuan yang Dipelajari</h2>
+          <ul class="skill-list"><li>HTML5 Semantik</li><li>Box Model</li><li>CSS Float</li><li>Clearfix</li><li>Layout Sidebar</li><li>Responsive CSS</li></ul>
+        </section>
+        <section id="portfolio">
+          <h2 class="section-heading">Portofolio</h2>
+          <div class="portfolio-grid">
+            <article class="portfolio-card"><h3>Box Element</h3><p>Mendemonstrasikan tiga elemen dengan float ke kiri dan elemen keempat menggunakan clear.</p><p><a href="../lab4_box.html">Buka demo &raquo;</a></p></article>
+            <article class="portfolio-card"><h3>Layout Sederhana</h3><p>Halaman dengan header, navigasi, hero panel, konten utama, sidebar, dan footer.</p><p><a href="home.html">Buka halaman &raquo;</a></p></article>
+            <article class="portfolio-card"><h3>Artikel</h3><p>Halaman artikel yang menggunakan elemen article dan gambar yang diposisikan dengan float.</p><p><a href="artikel.html">Baca artikel &raquo;</a></p></article>
+            <article class="portfolio-card"><h3>Form Kontak</h3><p>Formulir untuk demonstrasi input nama, email, subjek, dan pesan.</p><p><a href="kontak.html">Buka kontak &raquo;</a></p></article>
+          </div>
+        </section>
+      </main>
+      <aside id="sidebar">
+        <div class="widget-box"><h3 class="title">Ringkasan</h3><ul><li><a href="#">Proyek: Lab4Web</a></li><li><a href="#skill-title">Materi: CSS Layout</a></li><li><a href="#portfolio">Empat hasil latihan</a></li></ul></div>
+        <div class="widget-box"><h3 class="title">Kontak</h3><p>Gunakan halaman Kontak untuk mencoba form isian.</p><p><a href="kontak.html" class="btn">Buka Form</a></p></div>
+      </aside>
+    </section>
+    <footer><p>&copy; 2026 - Lab4Web | Halaman About</p></footer>
+  </div>
+</body>
+</html>
